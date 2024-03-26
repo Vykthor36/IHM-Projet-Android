@@ -1,3 +1,22 @@
 <resources>
-    <string name="app_name">M1_IHM_Projet</string>
+    <string name="app_name">Your story!</string>
+
+    <string name="titleTextView">YOUR STORY!</string>
+    <string name="difficultyTextView">Difficulty</string>
+    <string name="easyTextView">Easy</string>
+    <string name="normalTextView">Normal</string>
+    <string name="difficultTextView">Difficult</string>
+    <string name="newGameButton">NEW GAME</string>
+
+    <string name="characterTextView">CHARACTER CUSTOMIZATION:</string>
+    <string name="nameEditText">Patrick</string>
+    <string name="nameTextView">Name:</string>
+    <string name="bdTextView">Birthdate:</string>
+
+    <string name="gameResultTextView">YOU XXX!</string>
+    <string name="gameWinTextView">YOU WIN!</string>
+    <string name="gameLooseTextView">YOU LOST!</string>
+    <string name="gameDetailsTextView">You ...</string>
+    <string name="gameDetailsTextViewEasy">It\'s easy to win, isn\'t it?</string>
+    <string name="gameDetailsTextViewHard">It\'s hard to win, isn\'t it?</string>
 </resources>

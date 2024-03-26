@@ -1,4 +1,4 @@
-package m1.ihm.m1_ihm_projet;
+package fr.univ_poitiers.m1_ihm_projet;
 
 import org.junit.Test;
 
