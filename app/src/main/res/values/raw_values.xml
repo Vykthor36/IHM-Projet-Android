@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="oldSageYear">1950</integer>
+    <integer name="warriorYear">2000</integer>
+    <integer name="wizardYear">2015</integer>
+</resources>

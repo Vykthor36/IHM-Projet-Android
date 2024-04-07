@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Your story!</string>
 
+    <!--    Main activity strings-->
     <string name="titleTextView">YOUR STORY!</string>
     <string name="difficultyTextView">Difficulty</string>
     <string name="easyTextView">Easy</string>
@@ -8,15 +9,39 @@
     <string name="difficultTextView">Difficult</string>
     <string name="newGameButton">NEW GAME</string>
 
+
+    <!--    Character activity strings-->
     <string name="characterTextView">CHARACTER CUSTOMIZATION:</string>
-    <string name="nameEditText">Patrick</string>
+    <string name="namePlaceholderText">Patrick</string>
     <string name="nameTextView">Name:</string>
     <string name="bdTextView">Birthdate:</string>
+    <string name="validateCharacterText">Create character</string>
 
+    <!--    GameInformation strings-->
+    <string name="easyDifficulty">Easy</string>
+    <string name="normalDifficulty">Normal</string>
+    <string name="hardDifficulty">Hard</string>
+    <string name="oldSageClassName">Old sage</string>
+    <string name="warriorClassName">Warrior</string>
+    <string name="wizardClassName">Wizard</string>
+    <string name="bigBabyClassName">Big baby</string>
+
+    <!--    End strings-->
     <string name="gameResultTextView">YOU XXX!</string>
     <string name="gameWinTextView">YOU WIN!</string>
     <string name="gameLooseTextView">YOU LOST!</string>
     <string name="gameDetailsTextView">You ...</string>
     <string name="gameDetailsTextViewEasy">It\'s easy to win, isn\'t it?</string>
     <string name="gameDetailsTextViewHard">It\'s hard to win, isn\'t it?</string>
+    <string name="titleFirstWarriorChallenge">First warrior challenge !!</string>
+    <string name="wizardChoiceAButtonText">Chocolate</string>
+    <string name="wizardChoiceBButtonText">Little nougat</string>
+    <string name="wizardChoiceCButtonText">Full box</string>
+    <string name="wizardChoiceDButtonText">Beer</string>
+    <string name="titleFirstWizardChallenge">First Wizard challenge !!</string>
+    <string name="wizard1Question">In the song "La sorcière Grabouilla" from Gérard Dalton, what does the witch named Grabouilla ate to much and caused her a stomach ache ?</string>
+    <string name="titleSecondWizardChallenge">The second challenge of the wizard !!</string>
+    <string name="validateChallenge">Validate</string>
+    <string name="wizard2Challenge">Challenge : all green !!</string>
+    <string name="secondWarriorChallengeTitle">The second warrior challenge !!</string>
 </resources>

@@ -11,7 +11,7 @@ import android.widget.TextView;
 public class EndActivity extends AppCompatActivity {
 
     // Attributes
-    private String details;
+    private GameInformation gameInformation;
     private ConstraintLayout endConstraintLayout;
     private TextView gameResultTextView;
     private TextView gameDetailsTextView;
@@ -26,13 +26,12 @@ public class EndActivity extends AppCompatActivity {
         gameResultTextView = findViewById(R.id.gameResultTextView);
         gameDetailsTextView = findViewById(R.id.gameDetailsTextView);
 
-        Intent i = getIntent();
-        boolean isWon = i.getBooleanExtra("isWon", false);
-        if (isWon) gameWon();
+        gameInformation = getIntent().getParcelableExtra(GameInformation.class.getName());
+
+        if (gameInformation.isWon()) gameWon();
         else gameLost();
 
-        details = i.getStringExtra("details");
-        gameDetailsTextView.setText(details);
+        gameDetailsTextView.setText(gameInformation.getDetails());
     }
 
     private void gameWon() {
