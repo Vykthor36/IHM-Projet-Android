@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Votre histoire!</string>
+    <string name="titleTextView">VOTRE HISTOIRE!</string>
+    <string name="difficultyTextView">Difficulté</string>
+    <string name="newGameButton">NOUVELLE PARTIE</string>
+    <string name="characterTextView">CUSTOMISATION DU PERSONNAGE</string>
+    <string name="namePlaceholderText">Patrique</string>
+    <string name="nameTextView">Nom:</string>
+    <string name="bdTextView">Date de naissance:</string>
+    <string name="validateCharacterText">Créer le personnagae</string>
+    <string name="easyDifficulty">Facile</string>
+    <string name="normalDifficulty">Normale</string>
+    <string name="hardDifficulty">Difficile</string>
+    <string name="oldSageClassName">Vieux sage</string>
+    <string name="warriorClassName">Guerrier</string>
+    <string name="wizardClassName">Sorcier</string>
+    <string name="bigBabyClassName">Gros bébé</string>
+    <string name="gameResultTextView">TU AS XXX</string>
+    <string name="gameWinTextView">TU AS GAGNÉ</string>
+    <string name="gameLooseTextView">TU AS PERDU</string>
+    <string name="gameDetailsTextView">Tu...</string>
+    <string name="gameDetailsTextViewEasy">Facile n\'est-ce pas?</string>
+    <string name="gameDetailsTextViewHard">Difficile n\'est-ce pas ?</string>
+    <string name="titleFirstWarriorChallenge">Pemier challenge du guerrier !!</string>
+    <string name="wizardChoiceAButtonText">Chocolat</string>
+    <string name="wizardChoiceBButtonText">Petit nougats</string>
+    <string name="wizardChoiceCButtonText">Boîte entière</string>
+    <string name="wizardChoiceDButtonText">Bière</string>
+    <string name="titleFirstWizardChallenge">Premier challenge du sorcier !!</string>
+    <string name="wizard1Question">Dans la chanson \"La sorcière Grabouilla\" de Gérard Dalton, qu\'est-ce que la sorcière appelée Grabouilla a trop mangé lui causant des maux d\'estomac ?</string>
+    <string name="titleSecondWizardChallenge">Le deuxième challenge du sorcier</string>
+    <string name="validateChallenge">Valider</string>
+    <string name="wizard2Challenge">Challenge : tout en vert !!</string>
+    <string name="secondWarriorChallengeTitle">Le deuxième challenge du guerrier !!</string>
+</resources>

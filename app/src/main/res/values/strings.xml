@@ -4,9 +4,6 @@
     <!--    Main activity strings-->
     <string name="titleTextView">YOUR STORY!</string>
     <string name="difficultyTextView">Difficulty</string>
-    <string name="easyTextView">Easy</string>
-    <string name="normalTextView">Normal</string>
-    <string name="difficultTextView">Difficult</string>
     <string name="newGameButton">NEW GAME</string>
 
 
@@ -39,7 +36,7 @@
     <string name="wizardChoiceCButtonText">Full box</string>
     <string name="wizardChoiceDButtonText">Beer</string>
     <string name="titleFirstWizardChallenge">First Wizard challenge !!</string>
-    <string name="wizard1Question">In the song "La sorcière Grabouilla" from Gérard Dalton, what does the witch named Grabouilla ate to much and caused her a stomach ache ?</string>
+    <string name="wizard1Question">In the song \"La sorcière Grabouilla\" from Gérard Dalton, what does the witch named Grabouilla ate to much and caused her stomach ache?</string>
     <string name="titleSecondWizardChallenge">The second challenge of the wizard !!</string>
     <string name="validateChallenge">Validate</string>
     <string name="wizard2Challenge">Challenge : all green !!</string>

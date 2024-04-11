@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
             gameInformation.setDifficulty(getResources().getString(R.string.hardDifficulty));
             gameInformation.setDetails(getResources().getString(R.string.gameDetailsTextViewHard));
         } else {
-            intent = new Intent(this, SecondWarriorChallengeActivity.class);
+            intent = new Intent(this, CharacterActivity.class);
             gameInformation.setDifficulty(getResources().getString(R.string.normalDifficulty));
         }
         intent.putExtra(GameInformation.class.getName(), gameInformation);

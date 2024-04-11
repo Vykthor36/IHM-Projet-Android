@@ -1,5 +1,6 @@
 package fr.univ_poitiers.m1_ihm_projet;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.widget.VideoView;
 
@@ -14,5 +15,8 @@ public class FirstWarriorChallengeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_warrior_challenge_1);
 
         videoView = findViewById(R.id.warriorVideoView);
+        Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.warriorchallenge1question);
+        videoView.setVideoURI(uri);
+        videoView.start();
     }
 }
