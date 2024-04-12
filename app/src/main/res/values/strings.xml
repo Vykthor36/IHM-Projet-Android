@@ -12,7 +12,7 @@
     <string name="namePlaceholderText">Patrick</string>
     <string name="nameTextView">Name:</string>
     <string name="bdTextView">Birthdate:</string>
-    <string name="validateCharacterText">Create character</string>
+    <string name="validateCharacterText">CREATE CHARACTER</string>
 
     <!--    GameInformation strings-->
     <string name="easyTextView">Easy</string>
@@ -38,6 +38,8 @@
 
     <!--    FirstWarriorChallenge-->
     <string name="titleFirstWarriorChallenge">WARRIOR CHALLENGE N°1</string>
+    <string name="aAnswerRadioButton" translatable="false">A</string>
+    <string name="bAnswerRadioButton" translatable="false">B</string>
 
     <!--    SecondWarriorChallenge-->
     <string name="secondWarriorChallengeTitle">WARRIOR CHALLENGE N°2</string>
@@ -58,9 +60,6 @@
     <string name="gameDetailsTextView">You ...</string>
     <string name="gameDetailsTextViewEasy">It\'s easy to win, isn\'t it?</string>
     <string name="gameDetailsTextViewHard">It\'s hard to win, isn\'t it?</string>
-
-
-
 
     <!-- Historic -->
     <string name="historicTitleTextView">GAMES HISTORY</string>

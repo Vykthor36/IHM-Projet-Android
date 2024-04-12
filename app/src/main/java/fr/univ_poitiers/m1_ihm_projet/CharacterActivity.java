@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CalendarView;
@@ -28,12 +29,11 @@ public class CharacterActivity extends AppCompatActivity {
         nameEditText = findViewById(R.id.nameEditText);
         validateCharacterButton = findViewById(R.id.validateAgeButton);
         ageCalendarView = findViewById(R.id.ageCalendarView);
-
-        choosedYear = ageCalendarView.getYear();
     }
 
     public void validateCharacter(View v) {
         String characterName = nameEditText.getText().toString();
+        choosedYear = ageCalendarView.getYear();
 
         Intent intent;
         if (choosedYear <= getResources().getInteger(R.integer.oldSageYear)) {
@@ -44,12 +44,12 @@ public class CharacterActivity extends AppCompatActivity {
             intent = new Intent(this, FirstWarriorChallengeActivity.class);
             gameInformation.setClassName(getResources().getString(R.string.warriorClassName));
         }
-        else if(choosedYear <= getResources().getInteger(R.integer.wizardYear)) {
+        else if (choosedYear <= getResources().getInteger(R.integer.wizardYear)) {
             intent = new Intent(this, FirstWizardChallengeActivity.class);
             gameInformation.setClassName(getResources().getString(R.string.wizardClassName));
         }
         else {
-            intent = new Intent(this, FirstWizardChallengeActivity.class);
+            intent = new Intent(this, EndActivity.class);
             gameInformation.setClassName(getResources().getString(R.string.bigBabyClassName));
         }
 
