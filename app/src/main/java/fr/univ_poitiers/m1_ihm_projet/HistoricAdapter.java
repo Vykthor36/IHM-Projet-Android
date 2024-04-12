@@ -13,7 +13,7 @@ import java.util.List;
 public class HistoricAdapter extends RecyclerView.Adapter<HistoricAdapter.ViewHolder> {
 
     //Attributs
-    private List<GameInformation> G;
+    private final List<GameInformation> G;
 
     //Classe statique
     public static class ViewHolder extends RecyclerView.ViewHolder {
@@ -23,7 +23,7 @@ public class HistoricAdapter extends RecyclerView.Adapter<HistoricAdapter.ViewHo
         //Constructeur
         public ViewHolder(View view) {
             super(view);
-            textView = (TextView) view.findViewById(R.id.textHistoricRecycler);
+            textView = view.findViewById(R.id.textHistoricRecycler);
         }
 
         //Méthodes
@@ -48,7 +48,7 @@ public class HistoricAdapter extends RecyclerView.Adapter<HistoricAdapter.ViewHo
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         GameInformation c = G.get(position);
         String text = c.getName() + " | " + c.getClassName() + " (" + c.getDifficulty() + ") | " + c.getPlaceOfDeath();
-        ((ViewHolder) holder).getTextView().setText(text);
+        holder.getTextView().setText(text);
     }
 
     @Override
