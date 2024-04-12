@@ -1,28 +1,17 @@
 package fr.univ_poitiers.m1_ihm_projet;
 
 import android.content.Intent;
-import android.content.res.Resources;
 import android.os.Bundle;
-import android.os.Debug;
 import android.widget.Button;
-import android.widget.Switch;
-import android.widget.TableLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SwitchCompat;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 import java.util.logging.Logger;
 
 public class SecondWizardChallengeActivity extends AppCompatActivity {
 
     private SwitchCompat[][] switches;
-
-    private int nbClick;
-
-    private Button validateButton;
 
     private GameInformation gameInformation;
 
@@ -32,10 +21,12 @@ public class SecondWizardChallengeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_wizard_challenge_2);
 
         gameInformation = getIntent().getParcelableExtra(GameInformation.class.getName());
-        gameInformation.setDetails(getResources().getString(R.string.gameDetailsTextWiz2)); // In case of loose
+        if (gameInformation != null) {
+            gameInformation.setDetails(getResources().getString(R.string.gameDetailsTextWiz2)); // In case of loose
+        }
         gameInformation.setPlaceOfDeath(getResources().getString(R.string.placeOfDeathSecondChallenge));
 
-        validateButton = findViewById(R.id.validateWizardChoice2);
+        Button validateButton = findViewById(R.id.validateWizardChoice2);
         validateButton.setOnClickListener(view -> isWin());
 
         switches = new SwitchCompat[4][4];
@@ -63,14 +54,12 @@ public class SecondWizardChallengeActivity extends AppCompatActivity {
             switches[i][j].setOnClickListener(view ->
                     onSwicthChange(finalI, finalJ)
                 );
-        };
+        }
 
-        nbClick = 0;
     }
 
     private void onSwicthChange(int si, int sj){
         Logger.getAnonymousLogger().info("switch: "+si+sj+"changed to: "+switches[si][sj].isChecked());
-        nbClick++;
 
         for(int i = si-1; i<si+2; i++) for(int j = sj-1; j< sj+2; j++) {
             if(i>=0 && i<4 && j>=0 && j<4 && !(i==si && j==sj)) switches[i][j].setChecked(!switches[i][j].isChecked());

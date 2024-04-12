@@ -33,7 +33,7 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerViewHistoric"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="598dp"
             android:scrollbars="vertical"
             app:layoutManager="LinearLayoutManager" />
 

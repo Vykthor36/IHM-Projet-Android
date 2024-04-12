@@ -81,7 +81,7 @@
     <string name="gameDetailsTextView">You &#8230;</string>
     <string name="gameDetailsTextViewEasy">It\'s easy to win, isn\'t it?</string>
     <string name="gameDetailsTextViewHard">It\'s hard to win, isn\'t it?</string>
-    <string name="gameDetailsTextViewBaby">You should be at shcool right now!</string>
+    <string name="gameDetailsTextViewBaby">You should be at school right now!</string>
     <string name="gameDetailsTextViewOld">It\'s time for you soup!</string>
     <string name="gameDetailsTextWiz1">You are a wizard and you don\'t know Grabouilla the witch ?!</string>
     <string name="gameDetailsTextWiz2">You are so bad at puzzles&#8230;</string>
@@ -96,4 +96,5 @@
     <string name="placeOfDeathFirstChallenge">Death at: First challenge</string>
     <string name="placeOfDeathSecondChallenge">Death at: Second challenge</string>
     <string name="mainMenuButton">MAIN MENU</string>
+    <string name="quit">Quit</string>
 </resources>

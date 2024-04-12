@@ -19,7 +19,7 @@
     <string name="gameResultTextView">TU AS XXX</string>
     <string name="gameWinTextView">TU AS GAGNÉ</string>
     <string name="gameLooseTextView">TU AS PERDU</string>
-    <string name="gameDetailsTextView">Tu...</string>
+    <string name="gameDetailsTextView">Tu…</string>
     <string name="gameDetailsTextViewEasy">Facile n\'est-ce pas?</string>
     <string name="gameDetailsTextViewHard">Difficile n\'est-ce pas ?</string>
     <string name="titleFirstWarriorChallenge">CHALLENGE DU GUERRIER N°1</string>
@@ -48,7 +48,7 @@
     <string name="gameDetailsTextViewOld">C\'est l\'heure de la soupe !</string>
     <string name="gameDetailsTextWiz1">Vous êtes un sorcier et vous ne connaissez pas la sorcière Grabouilla?</string>
     <string name="gameDetailsTextWar2">Comment êtes-vous encore en vie et en bonne santé ?</string>
-    <string name="gameDetailsTextWiz2">Vous êtes tellement mauvais en casse-têtes ...</string>
+    <string name="gameDetailsTextWiz2">Vous êtes tellement mauvais en casse-têtes …</string>
     <string name="gameDetailsTextWar1">Tous les bons guerriers savent que tous les chemins mènent à Rome !</string>
     <string name="placeOfDeathMenu">Mort à : Menu principal</string>
     <string name="placeOfDeathCharacter">Mort à : Création de personnage</string>
@@ -77,4 +77,5 @@
     <string name="unknownClassName">Classe inconnue</string>
     <string name="victory">VICTOIRE</string>
     <string name="mainMenuButton">MENU PRINCIPAL</string>
+    <string name="quit">Quitter</string>
 </resources>

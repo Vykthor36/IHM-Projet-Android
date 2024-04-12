@@ -14,12 +14,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.time.Instant;
 
 public class FirstWizardChallengeActivity extends AppCompatActivity {
-    private WebView webView;
 
     private long time;
     private CheckBox buttonA, buttonB, buttonC, buttonD;
-
-    private Button validateButton;
 
     private GameInformation gameInformation;
 
@@ -37,10 +34,10 @@ public class FirstWizardChallengeActivity extends AppCompatActivity {
         buttonC = findViewById(R.id.checkBoxC);
         buttonD = findViewById(R.id.checkBoxD);
 
-        validateButton = findViewById(R.id.validateWizardChoice2);
+        Button validateButton = findViewById(R.id.validateWizardChoice2);
         validateButton.setOnClickListener(view -> validateWizardChoice1());
 
-        webView = findViewById(R.id.wizardWebView);
+        WebView webView = findViewById(R.id.wizardWebView);
         webView.setWebViewClient(new WebViewClient(){
             public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest webResourceRequest){
                 return false;

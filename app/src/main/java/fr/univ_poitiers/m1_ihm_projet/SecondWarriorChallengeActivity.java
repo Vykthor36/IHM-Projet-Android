@@ -1,29 +1,17 @@
 package fr.univ_poitiers.m1_ihm_projet;
 
-import android.content.ClipData;
-import android.content.ClipDescription;
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.PorterDuff;
-import android.media.Image;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.DragEvent;
-import android.view.MotionEvent;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.VideoView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.motion.widget.Debug;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.logging.Logger;
 
 public class SecondWarriorChallengeActivity extends AppCompatActivity implements View.OnDragListener, View.OnLongClickListener {
 
@@ -74,10 +62,6 @@ public class SecondWarriorChallengeActivity extends AppCompatActivity implements
     @Override
     public boolean onLongClick(View v) {
         dragged = (TextView) v;
-
-//        ClipData.Item item = new ClipData.Item((CharSequence) "Drag");
-//        String[] mimeTypes = {ClipDescription.MIMETYPE_TEXT_PLAIN};
-//        ClipData data = new ClipData("drag", mimeTypes, item);
 
         v.invalidate();
 

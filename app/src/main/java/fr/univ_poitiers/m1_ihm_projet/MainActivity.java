@@ -1,11 +1,10 @@
 package fr.univ_poitiers.m1_ihm_projet;
 
-import static androidx.core.content.ContextCompat.startActivity;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.SeekBar;
 
 public class MainActivity extends AppCompatActivity {
@@ -21,6 +20,12 @@ public class MainActivity extends AppCompatActivity {
 
         difficultySeekBar = findViewById(R.id.difficultySeekBar);
         HistoricActivity.createAdapter();
+        Button quitButton = findViewById(R.id.buttonQuit);
+
+        quitButton.setOnClickListener(l -> {
+            finishAffinity();
+            System.exit(0);
+        });
     }
 
     public void startNewGame(android.view.View v) {

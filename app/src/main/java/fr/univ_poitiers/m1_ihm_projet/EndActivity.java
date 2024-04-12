@@ -12,8 +12,6 @@ import android.widget.TextView;
 
 public class EndActivity extends AppCompatActivity {
 
-    // Attributes
-    private GameInformation gameInformation;
     private ConstraintLayout endConstraintLayout;
     private TextView gameResultTextView;
     private TextView gameDetailsTextView;
@@ -28,10 +26,10 @@ public class EndActivity extends AppCompatActivity {
         gameResultTextView = findViewById(R.id.gameResultTextView);
         gameDetailsTextView = findViewById(R.id.gameDetailsTextView);
 
-        gameInformation = getIntent().getParcelableExtra(GameInformation.class.getName());
+        // Attributes
+        GameInformation gameInformation = getIntent().getParcelableExtra(GameInformation.class.getName());
 
-        if (gameInformation.isWon()) gameWon();
-        else gameLost();
+        if (gameInformation != null && gameInformation.isWon()) gameWon();
 
         gameDetailsTextView.setText(gameInformation.getDetails());
 
@@ -45,7 +43,7 @@ public class EndActivity extends AppCompatActivity {
         gameResultTextView.setTextColor(Color.rgb(38, 50, 56));
         gameDetailsTextView.setTextColor(Color.rgb(38, 50, 56));
 
-        gameResultTextView.setText("YOU WON!");
+        gameResultTextView.setText(R.string.gameWinTextView);
     }
 
     private void gameLost() {
@@ -53,22 +51,15 @@ public class EndActivity extends AppCompatActivity {
         gameResultTextView.setTextColor(Color.rgb(0, 0, 0));
         gameDetailsTextView.setTextColor(Color.rgb(0, 0, 0));
 
-        gameResultTextView.setText("YOU LOST!");
+        gameResultTextView.setText(R.string.gameLooseTextView);
     }
 
     private void disableBackAction() {
         View rootView = getWindow().getDecorView().getRootView();
         rootView.setFocusableInTouchMode(true);
-        rootView.setOnKeyListener(new View.OnKeyListener() {
-            @Override
-            public boolean onKey(View v, int keyCode, KeyEvent event) {
-                if (keyCode == KeyEvent.KEYCODE_BACK) {
-                    // On enlève ici toute action présente sur le retour pour prévenir la triche
-                    return true;
-                }
-
-                return false;
-            }
+        rootView.setOnKeyListener((v, keyCode, event) -> {
+            // On enlève ici toute action présente sur le retour pour prévenir la triche
+            return keyCode == KeyEvent.KEYCODE_BACK;
         });
     }
 

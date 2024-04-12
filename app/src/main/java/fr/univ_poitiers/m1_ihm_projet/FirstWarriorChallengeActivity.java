@@ -11,14 +11,11 @@ import android.widget.VideoView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.google.android.material.button.MaterialButtonToggleGroup;
-
 public class FirstWarriorChallengeActivity extends AppCompatActivity {
     private VideoView videoView;
     private RadioGroup radioGroup;
     private Button validateButton;
     private GameInformation gameInformation;
-    private String pathQuestion;
     private String pathAnswer;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +28,7 @@ public class FirstWarriorChallengeActivity extends AppCompatActivity {
         videoView = findViewById(R.id.videoView);
         radioGroup = findViewById(R.id.answersRadioGroup);
 
-        pathQuestion = "android.resource://" + getPackageName() + "/" + R.raw.warriorchallenge1question;
+        String pathQuestion = "android.resource://" + getPackageName() + "/" + R.raw.warriorchallenge1question;
         pathAnswer = "android.resource://" + getPackageName() + "/" + R.raw.warriorchallenge1answer;
 
         videoView.setVideoURI(Uri.parse(pathQuestion));

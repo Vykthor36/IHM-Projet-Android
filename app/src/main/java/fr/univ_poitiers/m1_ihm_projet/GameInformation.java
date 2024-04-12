@@ -113,6 +113,7 @@ public class GameInformation implements Parcelable {
         rating = in.readInt();
         name = in.readString();
         details = in.readString();
+        className = in.readString();
     }
 
     // Interfaces
@@ -142,5 +143,6 @@ public class GameInformation implements Parcelable {
         parcel.writeInt(rating);
         parcel.writeString(name);
         parcel.writeString(details);
+        parcel.writeString(className);
     }
 }
