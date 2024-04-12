@@ -54,5 +54,5 @@ public class HistoricAdapter extends RecyclerView.Adapter<HistoricAdapter.ViewHo
     @Override
     public int getItemCount() { return G.size(); }
 
-    public void addConversion(GameInformation g) { G.add(g); }
+    public void addGameInformation(GameInformation g) { G.add(g); }
 }

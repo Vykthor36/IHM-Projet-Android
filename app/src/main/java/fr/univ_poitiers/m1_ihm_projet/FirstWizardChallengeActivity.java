@@ -45,9 +45,9 @@ public class FirstWizardChallengeActivity extends AppCompatActivity {
                 return false;
             }
         });
+
         webView.canGoForward();
         webView.loadUrl("https://www.google.fr/");
-
     }
 
     private void validateWizardChoice1(){
@@ -57,7 +57,10 @@ public class FirstWizardChallengeActivity extends AppCompatActivity {
         }
         else { // Mauvais choix
             intent = new Intent(this, EndActivity.class);
+            gameInformation.setPlaceOfDeath(getResources().getString(R.string.placeOfDeathFirstChallenge));
+            gameInformation.setDetails(getResources().getString(R.string.gameDetailsTextWiz1));
         }
+
         gameInformation.setTime(time - Instant.now().toEpochMilli());
 
         intent.putExtra(GameInformation.class.getName(), gameInformation);

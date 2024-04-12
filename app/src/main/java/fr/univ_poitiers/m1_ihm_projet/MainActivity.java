@@ -31,10 +31,12 @@ public class MainActivity extends AppCompatActivity {
             intent = new Intent(this, EndActivity.class);
             gameInformation.setDifficulty(getResources().getString(R.string.easyTextView));
             gameInformation.setWon(true);
+            gameInformation.setPlaceOfDeath(getResources().getString(R.string.placeOfDeathMenu));
             gameInformation.setDetails(getResources().getString(R.string.gameDetailsTextViewEasy));
         } else if (d == 2) {
             intent = new Intent(this, EndActivity.class);
             gameInformation.setDifficulty(getResources().getString(R.string.normalTextView));
+            gameInformation.setPlaceOfDeath(getResources().getString(R.string.placeOfDeathMenu));
             gameInformation.setDetails(getResources().getString(R.string.gameDetailsTextViewHard));
         } else {
             intent = new Intent(this, CharacterActivity.class);

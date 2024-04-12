@@ -16,7 +16,7 @@ public class HistoricActivity extends AppCompatActivity {
 
     // Attributes
     private RecyclerView recyclerViewHistoric;
-    private HistoricAdapter historicAdapter;
+    private static HistoricAdapter historicAdapter;
 
     // Methods
     @Override
@@ -31,5 +31,10 @@ public class HistoricActivity extends AppCompatActivity {
         List<GameInformation> G = new ArrayList<>();
         historicAdapter = new HistoricAdapter(G);
         recyclerViewHistoric.setAdapter(historicAdapter);
+    }
+
+    public static void addGameInformation(GameInformation g)
+    {
+        historicAdapter.addGameInformation(g);
     }
 }

@@ -32,6 +32,8 @@ public class SecondWizardChallengeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_wizard_challenge_2);
 
         gameInformation = getIntent().getParcelableExtra(GameInformation.class.getName());
+        gameInformation.setDetails(getResources().getString(R.string.gameDetailsTextWiz2)); // In case of loose
+        gameInformation.setPlaceOfDeath(getResources().getString(R.string.placeOfDeathSecondChallenge));
 
         validateButton = findViewById(R.id.validateWizardChoice2);
         validateButton.setOnClickListener(view -> isWin());

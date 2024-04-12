@@ -39,6 +39,8 @@ public class CharacterActivity extends AppCompatActivity {
         if (choosedYear <= getResources().getInteger(R.integer.oldSageYear)) {
             intent = new Intent(this, EndActivity.class);
             gameInformation.setClassName(getResources().getString(R.string.oldSageClassName));
+            gameInformation.setPlaceOfDeath(getResources().getString(R.string.placeOfDeathCharacter));
+            gameInformation.setDetails(getResources().getString(R.string.gameDetailsTextViewOld));
         }
         else if (choosedYear <= getResources().getInteger(R.integer.warriorYear)) {
             intent = new Intent(this, FirstWarriorChallengeActivity.class);
@@ -51,6 +53,8 @@ public class CharacterActivity extends AppCompatActivity {
         else {
             intent = new Intent(this, EndActivity.class);
             gameInformation.setClassName(getResources().getString(R.string.bigBabyClassName));
+            gameInformation.setPlaceOfDeath(getResources().getString(R.string.placeOfDeathCharacter));
+            gameInformation.setDetails(getResources().getString(R.string.gameDetailsTextViewBaby));
         }
 
         gameInformation.setDetails(gameInformation.getDetails() + gameInformation.getClassName());

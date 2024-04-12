@@ -35,6 +35,22 @@
     <string name="titleSecondWizardChallenge">WIZARD CHALLENGE N°2</string>
     <string name="validateChallenge">VALIDATE</string>
     <string name="wizard2Challenge">Challenge: make them all green!</string>
+    <string name="switchSpeakableText1">Switch n°1</string>
+    <string name="switchSpeakableText2">Switch n°2</string>
+    <string name="switchSpeakableText3">Switch n°3</string>
+    <string name="switchSpeakableText4">Switch n°4</string>
+    <string name="switchSpeakableText5">Switch n°5</string>
+    <string name="switchSpeakableText6">Switch n°6</string>
+    <string name="switchSpeakableText7">Switch n°7</string>
+    <string name="switchSpeakableText8">Switch n°8</string>
+    <string name="switchSpeakableText9">Switch n°9</string>
+    <string name="switchSpeakableText10">Switch n°10</string>
+    <string name="switchSpeakableText11">Switch n°11</string>
+    <string name="switchSpeakableText12">Switch n°12</string>
+    <string name="switchSpeakableText13">Switch n°13</string>
+    <string name="switchSpeakableText14">Switch n°14</string>
+    <string name="switchSpeakableText15">Switch n°15</string>
+    <string name="switchSpeakableText16">Switch n°16</string>
 
     <!--    FirstWarriorChallenge-->
     <string name="titleFirstWarriorChallenge">WARRIOR CHALLENGE N°1</string>
@@ -45,7 +61,7 @@
     <string name="secondWarriorChallengeTitle">WARRIOR CHALLENGE N°2</string>
     <string name="warriorImageDescription">A strong warrior</string>
     <string name="binImageDescription">A bin</string>
-    <string name="questionWarriorChallenge2">Drag and drop the word in their right contener.</string>
+    <string name="questionWarriorChallenge2">Drag and drop the word in their right container.</string>
     <string name="warriorSecondChallengeWord">Steak</string>
     <string name="warriorSecondChallengeWord1">Cardboard</string>
     <string name="warriorSecondChallengeWord2">Apple (Rotten)</string>
@@ -57,10 +73,20 @@
     <string name="gameResultTextView">YOU XXX!</string>
     <string name="gameWinTextView">YOU WIN!</string>
     <string name="gameLooseTextView">YOU LOST!</string>
-    <string name="gameDetailsTextView">You ...</string>
+    <string name="gameDetailsTextView">You &#8230;</string>
     <string name="gameDetailsTextViewEasy">It\'s easy to win, isn\'t it?</string>
     <string name="gameDetailsTextViewHard">It\'s hard to win, isn\'t it?</string>
+    <string name="gameDetailsTextViewBaby">You should be at shcool right now!</string>
+    <string name="gameDetailsTextViewOld">It\'s time for you soup!</string>
+    <string name="gameDetailsTextWiz1">You are a wizard and you don\'t know Grabouilla the witch ?!</string>
+    <string name="gameDetailsTextWiz2">You are so bad at puzzles&#8230;</string>
+    <string name="gameDetailsTextWar1">Every good warrior knows that every road leads to Rome!</string>
+    <string name="gameDetailsTextWar2">How the hell are you still alive and well?</string>
 
     <!-- Historic -->
     <string name="historicTitleTextView">GAMES HISTORY</string>
+    <string name="placeOfDeathMenu">Home menu</string>
+    <string name="placeOfDeathCharacter">Character creation</string>
+    <string name="placeOfDeathFirstChallenge">First challenge</string>
+    <string name="placeOfDeathSecondChallenge">Second challenge</string>
 </resources>

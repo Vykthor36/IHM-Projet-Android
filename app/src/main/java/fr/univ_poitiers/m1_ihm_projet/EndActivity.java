@@ -32,6 +32,8 @@ public class EndActivity extends AppCompatActivity {
         else gameLost();
 
         gameDetailsTextView.setText(gameInformation.getDetails());
+
+        HistoricActivity.addGameInformation(gameInformation);
     }
 
     private void gameWon() {

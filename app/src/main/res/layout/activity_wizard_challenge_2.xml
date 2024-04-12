@@ -62,28 +62,32 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:minWidth="48dp"
-                android:minHeight="48dp" />
+                android:minHeight="48dp"
+                android:contentDescription="@string/switchSpeakableText1" />
 
             <androidx.appcompat.widget.SwitchCompat
                 android:id="@+id/switch01"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:minWidth="48dp"
-                android:minHeight="48dp" />
+                android:minHeight="48dp"
+                android:contentDescription="@string/switchSpeakableText2" />
 
             <androidx.appcompat.widget.SwitchCompat
                 android:id="@+id/switch02"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:minWidth="48dp"
-                android:minHeight="48dp" />
+                android:minHeight="48dp"
+                android:contentDescription="@string/switchSpeakableText3" />
 
             <androidx.appcompat.widget.SwitchCompat
                 android:id="@+id/switch03"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:minWidth="48dp"
-                android:minHeight="48dp" />
+                android:minHeight="48dp"
+                android:contentDescription="@string/switchSpeakableText4" />
 
         </TableRow>
 
@@ -96,28 +100,32 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:minWidth="48dp"
-                android:minHeight="48dp" />
+                android:minHeight="48dp"
+                android:contentDescription="@string/switchSpeakableText5" />
 
             <androidx.appcompat.widget.SwitchCompat
                 android:id="@+id/switch11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:minWidth="48dp"
-                android:minHeight="48dp" />
+                android:minHeight="48dp"
+                android:contentDescription="@string/switchSpeakableText6" />
 
             <androidx.appcompat.widget.SwitchCompat
                 android:id="@+id/switch12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:minWidth="48dp"
-                android:minHeight="48dp" />
+                android:minHeight="48dp"
+                android:contentDescription="@string/switchSpeakableText7" />
 
             <androidx.appcompat.widget.SwitchCompat
                 android:id="@+id/switch13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:minWidth="48dp"
-                android:minHeight="48dp" />
+                android:minHeight="48dp"
+                android:contentDescription="@string/switchSpeakableText8" />
         </TableRow>
 
         <TableRow
@@ -129,28 +137,32 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:minWidth="48dp"
-                android:minHeight="48dp" />
+                android:minHeight="48dp"
+                android:contentDescription="@string/switchSpeakableText9" />
 
             <androidx.appcompat.widget.SwitchCompat
                 android:id="@+id/switch21"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:minWidth="48dp"
-                android:minHeight="48dp" />
+                android:minHeight="48dp"
+                android:contentDescription="@string/switchSpeakableText10" />
 
             <androidx.appcompat.widget.SwitchCompat
                 android:id="@+id/switch22"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:minWidth="48dp"
-                android:minHeight="48dp" />
+                android:minHeight="48dp"
+                android:contentDescription="@string/switchSpeakableText11" />
 
             <androidx.appcompat.widget.SwitchCompat
                 android:id="@+id/switch23"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:minWidth="48dp"
-                android:minHeight="48dp" />
+                android:minHeight="48dp"
+                android:contentDescription="@string/switchSpeakableText12" />
         </TableRow>
 
         <TableRow
@@ -162,28 +174,32 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:minWidth="48dp"
-                android:minHeight="48dp" />
+                android:minHeight="48dp"
+                android:contentDescription="@string/switchSpeakableText13" />
 
             <androidx.appcompat.widget.SwitchCompat
                 android:id="@+id/switch31"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:minWidth="48dp"
-                android:minHeight="48dp" />
+                android:minHeight="48dp"
+                android:contentDescription="@string/switchSpeakableText14" />
 
             <androidx.appcompat.widget.SwitchCompat
                 android:id="@+id/switch32"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:minWidth="48dp"
-                android:minHeight="48dp" />
+                android:minHeight="48dp"
+                android:contentDescription="@string/switchSpeakableText15" />
 
             <androidx.appcompat.widget.SwitchCompat
                 android:id="@+id/switch33"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:minWidth="48dp"
-                android:minHeight="48dp" />
+                android:minHeight="48dp"
+                android:contentDescription="@string/switchSpeakableText16" />
         </TableRow>
     </TableLayout>
 
