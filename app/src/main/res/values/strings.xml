@@ -5,7 +5,7 @@
     <string name="titleTextView">YOUR STORY!</string>
     <string name="difficultyTextView">Difficulty</string>
     <string name="newGameButton">NEW GAME</string>
-
+    <string name="historicButton">HISTORY</string>
 
     <!--    Character activity strings-->
     <string name="characterTextView">CHARACTER CUSTOMIZATION:</string>
@@ -15,13 +15,32 @@
     <string name="validateCharacterText">Create character</string>
 
     <!--    GameInformation strings-->
-    <string name="easyDifficulty">Easy</string>
-    <string name="normalDifficulty">Normal</string>
-    <string name="hardDifficulty">Hard</string>
+    <string name="easyTextView">Easy</string>
+    <string name="normalTextView">Normal</string>
+    <string name="difficultTextView">Hard</string>
     <string name="oldSageClassName">Old sage</string>
     <string name="warriorClassName">Warrior</string>
     <string name="wizardClassName">Wizard</string>
     <string name="bigBabyClassName">Big baby</string>
+
+    <!--    FirstWizardChallenge-->
+    <string name="titleFirstWizardChallenge">WIZARD CHALLENGE N°1</string>
+    <string name="wizard1Question">In the song La sorcière Grabouilla from Gérard Dalton, what does the witch named Grabouilla ate to much and caused her a stomach ache ?</string>
+    <string name="wizardChoiceAButtonText">Chocolate</string>
+    <string name="wizardChoiceBButtonText">Little nougat</string>
+    <string name="wizardChoiceCButtonText">Full box</string>
+    <string name="wizardChoiceDButtonText">Beer</string>
+
+    <!--    SecondWizardChallenge-->
+    <string name="titleSecondWizardChallenge">WIZARD CHALLENGE N°2</string>
+    <string name="validateChallenge">VALIDATE</string>
+    <string name="wizard2Challenge">Challenge: make them all green!</string>
+
+    <!--    FirstWarriorChallenge-->
+    <string name="titleFirstWarriorChallenge">WARRIOR CHALLENGE N°1</string>
+
+    <!--    SecondWarriorChallenge-->
+    <string name="secondWarriorChallengeTitle">WARRIOR CHALLENGE N°2</string>
 
     <!--    End strings-->
     <string name="gameResultTextView">YOU XXX!</string>
@@ -30,15 +49,7 @@
     <string name="gameDetailsTextView">You ...</string>
     <string name="gameDetailsTextViewEasy">It\'s easy to win, isn\'t it?</string>
     <string name="gameDetailsTextViewHard">It\'s hard to win, isn\'t it?</string>
-    <string name="titleFirstWarriorChallenge">First warrior challenge !!</string>
-    <string name="wizardChoiceAButtonText">Chocolate</string>
-    <string name="wizardChoiceBButtonText">Little nougat</string>
-    <string name="wizardChoiceCButtonText">Full box</string>
-    <string name="wizardChoiceDButtonText">Beer</string>
-    <string name="titleFirstWizardChallenge">First Wizard challenge !!</string>
-    <string name="wizard1Question">In the song \"La sorcière Grabouilla\" from Gérard Dalton, what does the witch named Grabouilla ate to much and caused her stomach ache?</string>
-    <string name="titleSecondWizardChallenge">The second challenge of the wizard !!</string>
-    <string name="validateChallenge">Validate</string>
-    <string name="wizard2Challenge">Challenge : all green !!</string>
-    <string name="secondWarriorChallengeTitle">The second warrior challenge !!</string>
+
+    <!-- Historic -->
+    <string name="historicTitleTextView">GAMES HISTORY</string>
 </resources>

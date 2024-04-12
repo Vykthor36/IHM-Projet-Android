@@ -9,6 +9,7 @@ import android.widget.Switch;
 import android.widget.TableLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SwitchCompat;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -17,7 +18,7 @@ import java.util.logging.Logger;
 
 public class SecondWizardChallengeActivity extends AppCompatActivity {
 
-    private Switch[][] switches;
+    private SwitchCompat[][] switches;
 
     private int nbClick;
 
@@ -35,7 +36,7 @@ public class SecondWizardChallengeActivity extends AppCompatActivity {
         validateButton = findViewById(R.id.validateWizardChoice2);
         validateButton.setOnClickListener(view -> isWin());
 
-        switches = new Switch[4][4];
+        switches = new SwitchCompat[4][4];
         switches[0][0] = findViewById(R.id.switch00);
         switches[0][1] = findViewById(R.id.switch01);
         switches[0][2] = findViewById(R.id.switch02);

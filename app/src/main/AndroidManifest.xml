@@ -29,6 +29,8 @@
         <activity
             android:name=".CharacterActivity"
             android:exported="false" />
+        <activity android:name=".HistoricActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

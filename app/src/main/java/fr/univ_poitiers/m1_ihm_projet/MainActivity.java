@@ -1,5 +1,7 @@
 package fr.univ_poitiers.m1_ihm_projet;
 
+import static androidx.core.content.ContextCompat.startActivity;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -27,19 +29,25 @@ public class MainActivity extends AppCompatActivity {
         Intent intent;
         if (d == 0) {
             intent = new Intent(this, EndActivity.class);
-            gameInformation.setDifficulty(getResources().getString(R.string.easyDifficulty));
+            gameInformation.setDifficulty(getResources().getString(R.string.easyTextView));
             gameInformation.setWon(true);
             gameInformation.setDetails(getResources().getString(R.string.gameDetailsTextViewEasy));
         } else if (d == 2) {
             intent = new Intent(this, EndActivity.class);
-            gameInformation.setDifficulty(getResources().getString(R.string.hardDifficulty));
+            gameInformation.setDifficulty(getResources().getString(R.string.normalTextView));
             gameInformation.setDetails(getResources().getString(R.string.gameDetailsTextViewHard));
         } else {
             intent = new Intent(this, CharacterActivity.class);
-            gameInformation.setDifficulty(getResources().getString(R.string.normalDifficulty));
+            gameInformation.setDifficulty(getResources().getString(R.string.difficultyTextView));
         }
-        intent.putExtra(GameInformation.class.getName(), gameInformation);
 
+        intent.putExtra(GameInformation.class.getName(), gameInformation);
+        startActivity(intent);
+    }
+
+    public void showHistory(android.view.View v)
+    {
+        Intent intent = new Intent(this, HistoricActivity.class);
         startActivity(intent);
     }
 }

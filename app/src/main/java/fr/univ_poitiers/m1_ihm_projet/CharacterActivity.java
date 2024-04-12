@@ -8,12 +8,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CalendarView;
+import android.widget.DatePicker;
 import android.widget.EditText;
 
 public class CharacterActivity extends AppCompatActivity {
 
     private EditText nameEditText;
-    private CalendarView ageCalendarView;
+    private DatePicker ageCalendarView;
     private int choosedYear;
     private Button validateCharacterButton;
     private GameInformation gameInformation;
@@ -28,26 +29,18 @@ public class CharacterActivity extends AppCompatActivity {
         validateCharacterButton = findViewById(R.id.validateAgeButton);
         ageCalendarView = findViewById(R.id.ageCalendarView);
 
-
-        choosedYear = (int) (1970 + (ageCalendarView.getDate()/31536000000L));
-        ageCalendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener(){
-            public void onSelectedDayChange(@NonNull CalendarView view, int year, int month, int dayOfMonth) {
-                if(choosedYear != year){
-                    choosedYear = year;
-                }
-            }
-        });
+        choosedYear = ageCalendarView.getYear();
     }
 
     public void validateCharacter(View v) {
         String characterName = nameEditText.getText().toString();
 
         Intent intent;
-        if(choosedYear <= getResources().getInteger(R.integer.oldSageYear)) {
+        if (choosedYear <= getResources().getInteger(R.integer.oldSageYear)) {
             intent = new Intent(this, EndActivity.class);
             gameInformation.setClassName(getResources().getString(R.string.oldSageClassName));
         }
-        else if(choosedYear <= getResources().getInteger(R.integer.warriorYear)) {
+        else if (choosedYear <= getResources().getInteger(R.integer.warriorYear)) {
             intent = new Intent(this, FirstWarriorChallengeActivity.class);
             gameInformation.setClassName(getResources().getString(R.string.warriorClassName));
         }
@@ -64,6 +57,4 @@ public class CharacterActivity extends AppCompatActivity {
         intent.putExtra(GameInformation.class.getName(), gameInformation);
         startActivity(intent);
     }
-
-
 }

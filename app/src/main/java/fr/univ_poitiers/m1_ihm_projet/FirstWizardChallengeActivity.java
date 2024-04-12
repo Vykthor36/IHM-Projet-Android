@@ -45,7 +45,6 @@ public class FirstWizardChallengeActivity extends AppCompatActivity {
                 return false;
             }
         });
-        webView.getSettings().setJavaScriptEnabled(true);
         webView.canGoForward();
         webView.loadUrl("https://www.google.fr/");
 
