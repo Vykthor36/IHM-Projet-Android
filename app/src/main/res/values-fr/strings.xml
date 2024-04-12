@@ -35,4 +35,13 @@
     <string name="secondWarriorChallengeTitle">CHALLENGE DU GUERRIER N°2</string>
     <string name="historicTitleTextView">HISTORIQUE DES PARTIES</string>
     <string name="historicButton">HISTORIQUE</string>
+    <string name="warriorImageDescription">A strong warrior</string>
+    <string name="binImageDescription">A bin</string>
+    <string name="questionWarriorChallenge2">Drag and drop the word in their right contener.</string>
+    <string name="warriorSecondChallengeWord">Steak</string>
+    <string name="warriorSecondChallengeWord1">Cardboard</string>
+    <string name="warriorSecondChallengeWord2">Apple (Rotten)</string>
+    <string name="warriorSecondChallengeWord3">Apple</string>
+    <string name="warriorSecondChallengeWord4">Apple (Device)</string>
+    <string name="warriorSecondChallengeWord5">Chocolate</string>
 </resources>
