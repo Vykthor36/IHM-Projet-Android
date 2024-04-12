@@ -19,6 +19,8 @@
     <string name="easyTextView">Easy</string>
     <string name="normalTextView">Normal</string>
     <string name="difficultTextView">Hard</string>
+    <string name="unknownCharacterName">Unknown player</string>
+    <string name="unknownClassName">Unknown class</string>
     <string name="oldSageClassName">Old sage</string>
     <string name="warriorClassName">Warrior</string>
     <string name="wizardClassName">Wizard</string>
@@ -85,11 +87,13 @@
     <string name="gameDetailsTextWiz2">You are so bad at puzzles&#8230;</string>
     <string name="gameDetailsTextWar1">Every good warrior knows that every road leads to Rome!</string>
     <string name="gameDetailsTextWar2">How the hell are you still alive and well?</string>
+    <string name="victory">VICTORY</string>
 
     <!-- Historic -->
     <string name="historicTitleTextView">GAMES HISTORY</string>
-    <string name="placeOfDeathMenu">Home menu</string>
-    <string name="placeOfDeathCharacter">Character creation</string>
-    <string name="placeOfDeathFirstChallenge">First challenge</string>
-    <string name="placeOfDeathSecondChallenge">Second challenge</string>
+    <string name="placeOfDeathMenu">Death at: Home menu</string>
+    <string name="placeOfDeathCharacter">Death at: Character creation</string>
+    <string name="placeOfDeathFirstChallenge">Death at: First challenge</string>
+    <string name="placeOfDeathSecondChallenge">Death at: Second challenge</string>
+    <string name="mainMenuButton">MAIN MENU</string>
 </resources>

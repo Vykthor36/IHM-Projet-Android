@@ -6,6 +6,8 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.KeyEvent;
+import android.view.View;
 import android.widget.TextView;
 
 public class EndActivity extends AppCompatActivity {
@@ -34,6 +36,8 @@ public class EndActivity extends AppCompatActivity {
         gameDetailsTextView.setText(gameInformation.getDetails());
 
         HistoricActivity.addGameInformation(gameInformation);
+
+        disableBackAction();
     }
 
     private void gameWon() {
@@ -50,5 +54,27 @@ public class EndActivity extends AppCompatActivity {
         gameDetailsTextView.setTextColor(Color.rgb(0, 0, 0));
 
         gameResultTextView.setText("YOU LOST!");
+    }
+
+    private void disableBackAction() {
+        View rootView = getWindow().getDecorView().getRootView();
+        rootView.setFocusableInTouchMode(true);
+        rootView.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                if (keyCode == KeyEvent.KEYCODE_BACK) {
+                    // On enlève ici toute action présente sur le retour pour prévenir la triche
+                    return true;
+                }
+
+                return false;
+            }
+        });
+    }
+
+    public void returnToMainMenu(android.view.View v)
+    {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 }

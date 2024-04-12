@@ -83,6 +83,7 @@ public class SecondWizardChallengeActivity extends AppCompatActivity {
         for(int i = 0; i< 4; i++) for(int j = 0; j< 4; j++) won &= switches[i][j].isChecked();
 
         gameInformation.setWon(won);
+        gameInformation.setPlaceOfDeath(getResources().getString(R.string.victory));
 
         Intent intent = new Intent(this, EndActivity.class);
 

@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         difficultySeekBar = findViewById(R.id.difficultySeekBar);
+        HistoricActivity.createAdapter();
     }
 
     public void startNewGame(android.view.View v) {
@@ -29,18 +30,22 @@ public class MainActivity extends AppCompatActivity {
         Intent intent;
         if (d == 0) {
             intent = new Intent(this, EndActivity.class);
+            gameInformation.setName(getResources().getString(R.string.unknownCharacterName));
+            gameInformation.setClassName(getResources().getString(R.string.unknownClassName));
             gameInformation.setDifficulty(getResources().getString(R.string.easyTextView));
             gameInformation.setWon(true);
-            gameInformation.setPlaceOfDeath(getResources().getString(R.string.placeOfDeathMenu));
+            gameInformation.setPlaceOfDeath(getResources().getString(R.string.victory));
             gameInformation.setDetails(getResources().getString(R.string.gameDetailsTextViewEasy));
         } else if (d == 2) {
             intent = new Intent(this, EndActivity.class);
-            gameInformation.setDifficulty(getResources().getString(R.string.normalTextView));
+            gameInformation.setName(getResources().getString(R.string.unknownCharacterName));
+            gameInformation.setClassName(getResources().getString(R.string.unknownClassName));
+            gameInformation.setDifficulty(getResources().getString(R.string.difficultTextView));
             gameInformation.setPlaceOfDeath(getResources().getString(R.string.placeOfDeathMenu));
             gameInformation.setDetails(getResources().getString(R.string.gameDetailsTextViewHard));
         } else {
             intent = new Intent(this, CharacterActivity.class);
-            gameInformation.setDifficulty(getResources().getString(R.string.difficultyTextView));
+            gameInformation.setDifficulty(getResources().getString(R.string.normalTextView));
         }
 
         intent.putExtra(GameInformation.class.getName(), gameInformation);

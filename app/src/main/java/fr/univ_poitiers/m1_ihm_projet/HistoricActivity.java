@@ -17,6 +17,7 @@ public class HistoricActivity extends AppCompatActivity {
     // Attributes
     private RecyclerView recyclerViewHistoric;
     private static HistoricAdapter historicAdapter;
+    private static boolean isAdapterCreated;
 
     // Methods
     @Override
@@ -28,9 +29,15 @@ public class HistoricActivity extends AppCompatActivity {
 
         //Création de l'historique de conversion
         recyclerViewHistoric.setLayoutManager(new LinearLayoutManager((this)));
-        List<GameInformation> G = new ArrayList<>();
-        historicAdapter = new HistoricAdapter(G);
         recyclerViewHistoric.setAdapter(historicAdapter);
+    }
+
+    public static void createAdapter() {
+        if (!isAdapterCreated) {
+            List<GameInformation> G = new ArrayList<>();
+            historicAdapter = new HistoricAdapter(G);
+            isAdapterCreated = true;
+        }
     }
 
     public static void addGameInformation(GameInformation g)

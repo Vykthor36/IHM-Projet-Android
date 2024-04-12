@@ -140,6 +140,7 @@ public class SecondWarriorChallengeActivity extends AppCompatActivity implements
         intent = new Intent(this, EndActivity.class);
 
         gameInformation.setWon(win);
+        gameInformation.setPlaceOfDeath(getResources().getString(R.string.victory));
         intent.putExtra(GameInformation.class.getName(), gameInformation);
 
         startActivity(intent);

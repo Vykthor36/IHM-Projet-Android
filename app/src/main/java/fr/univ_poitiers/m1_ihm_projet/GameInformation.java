@@ -48,9 +48,7 @@ public class GameInformation implements Parcelable {
         this.name = name;
     }
 
-    public void setClassName(String className) {
-        this.className = className;
-    }
+    public void setClassName(String className) { this.className = className; }
 
     public boolean isWarrior1Choice() {
         return warrior1Choice;

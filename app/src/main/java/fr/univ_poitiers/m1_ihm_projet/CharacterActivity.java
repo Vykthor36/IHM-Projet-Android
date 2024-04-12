@@ -57,7 +57,7 @@ public class CharacterActivity extends AppCompatActivity {
             gameInformation.setDetails(getResources().getString(R.string.gameDetailsTextViewBaby));
         }
 
-        gameInformation.setDetails(gameInformation.getDetails() + gameInformation.getClassName());
+        gameInformation.setName(characterName);
         intent.putExtra(GameInformation.class.getName(), gameInformation);
         startActivity(intent);
     }
