@@ -44,4 +44,7 @@
     <string name="warriorSecondChallengeWord3">Pomme</string>
     <string name="warriorSecondChallengeWord4">Pomme (Électronique)</string>
     <string name="warriorSecondChallengeWord5">Chocolat</string>
+    <string name="noAnswerMessage">Choisissez une réponse</string>
+    <string name="yummy">Miam!!</string>
+    <string name="gross">Berk!!</string>
 </resources>

@@ -6,6 +6,7 @@
     <string name="difficultyTextView">Difficulty</string>
     <string name="newGameButton">NEW GAME</string>
     <string name="historicButton">HISTORY</string>
+    <string name="noAnswerMessage">Please choose an answer</string>
 
     <!--    Character activity strings-->
     <string name="characterTextView">CHARACTER CUSTOMIZATION:</string>
@@ -52,12 +53,14 @@
     <string name="warriorSecondChallengeWord3">Apple</string>
     <string name="warriorSecondChallengeWord4">Apple (Device)</string>
     <string name="warriorSecondChallengeWord5">Chocolate</string>
+    <string name="yummy">Yummy!!</string>
+    <string name="gross">Gross!!</string>
 
     <!--    End strings-->
     <string name="gameResultTextView">YOU XXX!</string>
     <string name="gameWinTextView">YOU WIN!</string>
     <string name="gameLooseTextView">YOU LOST!</string>
-    <string name="gameDetailsTextView">You ...</string>
+    <string name="gameDetailsTextView">You …</string>
     <string name="gameDetailsTextViewEasy">It\'s easy to win, isn\'t it?</string>
     <string name="gameDetailsTextViewHard">It\'s hard to win, isn\'t it?</string>
 
