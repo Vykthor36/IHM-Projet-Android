@@ -70,4 +70,7 @@
     <string name="switchSpeakableText14">Interrupteur n°14</string>
     <string name="switchSpeakableText15">Interrupteur n°15</string>
     <string name="switchSpeakableText16">Interrupteur n°16</string>
+    <string name="noAnswerMessage">Choisissez une réponse</string>
+    <string name="yummy">Miam!!</string>
+    <string name="gross">Berk!!</string>
 </resources>

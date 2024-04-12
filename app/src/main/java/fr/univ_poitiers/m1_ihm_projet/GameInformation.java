@@ -19,6 +19,7 @@ public class GameInformation implements Parcelable {
     private String name;
     private Date birthdate;
     private String details;
+    private boolean warrior1Choice;
 
     private long time;
 
@@ -49,6 +50,14 @@ public class GameInformation implements Parcelable {
 
     public void setClassName(String className) {
         this.className = className;
+    }
+
+    public boolean isWarrior1Choice() {
+        return warrior1Choice;
+    }
+
+    public void setWarrior1Choice(boolean warrior1Choice) {
+        this.warrior1Choice = warrior1Choice;
     }
 
     public void setBirthdate(Date birthdate) {

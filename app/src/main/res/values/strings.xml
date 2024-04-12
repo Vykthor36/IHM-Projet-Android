@@ -6,6 +6,7 @@
     <string name="difficultyTextView">Difficulty</string>
     <string name="newGameButton">NEW GAME</string>
     <string name="historicButton">HISTORY</string>
+    <string name="noAnswerMessage">Please choose an answer</string>
 
     <!--    Character activity strings-->
     <string name="characterTextView">CHARACTER CUSTOMIZATION:</string>
@@ -35,22 +36,6 @@
     <string name="titleSecondWizardChallenge">WIZARD CHALLENGE N°2</string>
     <string name="validateChallenge">VALIDATE</string>
     <string name="wizard2Challenge">Challenge: make them all green!</string>
-    <string name="switchSpeakableText1">Switch n°1</string>
-    <string name="switchSpeakableText2">Switch n°2</string>
-    <string name="switchSpeakableText3">Switch n°3</string>
-    <string name="switchSpeakableText4">Switch n°4</string>
-    <string name="switchSpeakableText5">Switch n°5</string>
-    <string name="switchSpeakableText6">Switch n°6</string>
-    <string name="switchSpeakableText7">Switch n°7</string>
-    <string name="switchSpeakableText8">Switch n°8</string>
-    <string name="switchSpeakableText9">Switch n°9</string>
-    <string name="switchSpeakableText10">Switch n°10</string>
-    <string name="switchSpeakableText11">Switch n°11</string>
-    <string name="switchSpeakableText12">Switch n°12</string>
-    <string name="switchSpeakableText13">Switch n°13</string>
-    <string name="switchSpeakableText14">Switch n°14</string>
-    <string name="switchSpeakableText15">Switch n°15</string>
-    <string name="switchSpeakableText16">Switch n°16</string>
 
     <!--    FirstWarriorChallenge-->
     <string name="titleFirstWarriorChallenge">WARRIOR CHALLENGE N°1</string>
@@ -68,6 +53,8 @@
     <string name="warriorSecondChallengeWord3">Apple</string>
     <string name="warriorSecondChallengeWord4">Apple (Device)</string>
     <string name="warriorSecondChallengeWord5">Chocolate</string>
+    <string name="yummy">Yummy!!</string>
+    <string name="gross">Gross!!</string>
 
     <!--    End strings-->
     <string name="gameResultTextView">YOU XXX!</string>

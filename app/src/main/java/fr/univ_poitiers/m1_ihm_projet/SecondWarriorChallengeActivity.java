@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.VideoView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -115,8 +116,12 @@ public class SecondWarriorChallengeActivity extends AppCompatActivity implements
                 if(imageView.equals(imageWarrior) && goodForWarrior.contains(dragged) || !imageView.equals(imageWarrior) && !goodForWarrior.contains(dragged)){
                     nbWordRight++;
                     dragged.setVisibility(View.INVISIBLE);
+                    Toast.makeText(this, R.string.yummy, Toast.LENGTH_SHORT).show();
                 }
-                else end(false);
+                else {
+                    Toast.makeText(this, R.string.gross, Toast.LENGTH_SHORT).show();
+                    end(false);
+                }
 
                 if(nbWordRight >= 6) end(true);
 

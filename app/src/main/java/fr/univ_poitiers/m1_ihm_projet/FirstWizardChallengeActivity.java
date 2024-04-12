@@ -7,6 +7,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -51,6 +52,11 @@ public class FirstWizardChallengeActivity extends AppCompatActivity {
     }
 
     private void validateWizardChoice1(){
+        if(!buttonA.isChecked() && !buttonB.isChecked() && !buttonC.isChecked() && !buttonD.isChecked()){
+            Toast.makeText(this, R.string.noAnswerMessage, Toast.LENGTH_SHORT).show();
+            return;
+        }
+
         Intent intent;
         if(buttonA.isChecked() && !buttonB.isChecked() && buttonC.isChecked() && !buttonD.isChecked()){ // Bon choix (A&D)
             intent = new Intent(this, SecondWizardChallengeActivity.class);
